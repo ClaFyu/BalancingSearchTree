@@ -2,6 +2,7 @@
 // Created by 杨晨 on 2020/9/20.
 //
 
+#include <limits.h>
 #include "../headers/SkipList.h"
 
 SKNode::SKNode() {
