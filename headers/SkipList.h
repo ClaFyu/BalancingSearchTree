@@ -12,7 +12,7 @@
 
 class SKNode {
 public:
-    int key;
+    int key = 0;
     SKNode* forward[MAXLEVEL]{};
 
     SKNode();
@@ -22,8 +22,8 @@ public:
 
 class SkipList {
 public:
-    SKNode *hdr;
-    int listLevel;
+    SKNode *hdr = nullptr;
+    int listLevel = 0;
 
     int insert(int key);
     SKNode* search(int key) const;
